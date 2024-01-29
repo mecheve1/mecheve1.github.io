@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Mateo Echeverry's Masterful Eagle 🧑🏽‍🎓 ITIS3135 🧑🏽‍🎓 Form</title>
+        <script>
+            console.log('Salutations y Saludos');
+        </script>
+        <link rel="stylesheet" href="styles/default.css">
+    </head>
+    
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Form</h2>
+            <form action="#" id="form1">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="fname" required placeholder="John Doe"><br>
+                <label for="pNumber">Phone Number</label>
+                <input type="text" id="pNumber" name="pNumber" placeholder="000-000-0000" 
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" maxlength="10"><br>
+                <label for="email" >Email Adress</label>
+                <input type="email" id="email" name="email" required placeholder="wsd@gmail.com"><br>
+                <label for="people">Projected Evenet Attendanace Number</label>
+                <select id="people" name="people">
+                    <option value="1em">10-50 people</option>
+                    <option value="5em">50-150 people</option>
+                    <option value="15em">150-0 people</option>
+                    <option value="50em">500+ people</option>
+                </select><br>
+                <label for="aRevenue">Event Entertainment Budget:</label><br>
+                <input type="radio" id="rev1k" name="rev" value="1k">
+                <label for="rev1k">0$ - 100$</label><br>
+                <input type="radio" id="rev5k" name="rev" value="5k">
+                <label for="rev5k">100$ - 500$</label><br>
+                <input type="radio" id="rev15k" name="rev" value="15k">
+                <label for="rev15k">500$ - 1500$</label><br>
+                <input type="radio" id="rev50k" name="rev" value="50k">
+                <label for="rev1k">1500k+</label><br>
+                <label for="socials">Desired Event Pieces</label><br>
+                <input type="checkbox" id="dj" name="dj" value="Dj">
+                <label for="dj">Dj</label><br>
+                <input type="checkbox" id="lights" name="lights" value="Lights">
+                <label for="lights">Lights</label><br>
+                <input type="checkbox" id="bottle_service" name="bottle_service" value="BottleService">
+                <label for="bottle_service">Bottle Service</label><br>
+                <input type="checkbox" id="foam_party" name="foam_party" value="FoarmParty">
+                <label for="foam_party">Foam Party</label><br>
+                <input type="reset" value="Reset">
+                <button type="submit" form="form1" class="formSub" value="Submit">Submit</button>
+            </form>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.min.js"></script>
+    </body>   
+    <footer>
+        <div data-include="components/footer.html"></div>
+    </footer>
+</html>
