@@ -1,29 +1,31 @@
-function polygons{
-    
-}
 function getShape(sides){
     switch(sides){
         case 1:
-            sides = "heis";
+            sides = "hena";
         case 2:
-            sides = "duo";
+            sides = "di";
         case 3:
-            sides = "treis"
+            sides = "tri"
         case 4:
             sides = "tetra"
         case 5:
-            sides = "pent";
+            sides = "penta";
         case 6:
-            sides = "hex";
+            sides = "hexa";
         case 7:
-            sides = "hepta"
+            sides = "hepta";
         case 8:
-            sides = "oktu"
+            sides = "octa";
         case 9:
-            sides = "ennea"
+            sides = "ennea";
+        case 10:
+            sides = "deca";
+        case 11: 
+            sides = "hendeca";
         default:
             break;
     }
+    return sides + "gon";
 }
 
 function validateEntry(number){

@@ -5,3 +5,12 @@
  --page-color4: #ecf0f1;
  --page-color5: #79b473;
 }
+
+*{
+    background: var(--page-color1);
+    color: var(--page-color2)
+}
+.container{
+    display:flex;
+
+}
