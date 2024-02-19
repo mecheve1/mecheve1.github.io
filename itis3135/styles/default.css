@@ -10,7 +10,97 @@
     background: var(--page-color1);
     color: var(--page-color2)
 }
-.container{
-    display:flex;
 
+title{
+    text-align:center;
+    justify-content: center;
 }
+
+nav{
+    text-align: center;
+}
+
+main{
+    display:flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+body{
+    margin: 0 auto;
+    font-size: 100%;
+    justify-content: center;
+}
+a{
+    margin: 0 auto;
+    justify-content: center;
+}
+
+/*Form Changes*/
+/*Input Feilds*/
+input:focus{
+    border: var(--page-color3)
+}
+input{
+    background-color:#0b0033;
+    border: 3px;
+}
+
+::placeholder{
+    color: var(--page-color4);
+}
+
+/*divs*/
+.headerNav{
+    justify-content: center;
+}
+/*Mdia Querries
+Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    main { 
+        max-width: 600px; /* Adjust as needed */ 
+        width: 90%; /* Adjust percentage based on design requirements */ 
+        margin: 0 auto; /* Centers the content horizontally */ 
+        font-size: 150%;
+    }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    main { 
+        max-width: 787px; /* Adjust as needed */ 
+        width: 90%; /* Adjust percentage based on design requirements */ 
+        margin: 0 auto; /* Centers the content horizontally */ 
+        font-size: 150%;
+    }
+  }
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    main { 
+        max-width: 991px; /* Adjust as needed */ 
+        width: 80%; /* Adjust percentage based on design requirements */ 
+        margin: 0 auto; /* Centers the content horizontally */ 
+        font-size: 150%;
+    }
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    main { 
+        max-width: 1199px; /* Adjust as needed */ 
+        width: 90%; /* Adjust percentage based on design requirements */ 
+        margin: 0 auto; /* Centers the content horizontally */ 
+        font-size: 150%;
+    }
+  } 
+  
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1285px) {
+    main { 
+        max-width: 2000px; /* Adjust as needed */ 
+        width: 90%; /* Adjust percentage based on design requirements */ 
+        margin: 0 auto; /* Centers the content horizontally */ 
+        font-size: 150%;
+    }
+  }

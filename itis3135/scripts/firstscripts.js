@@ -1,9 +1,9 @@
 //Grab HTML Elements
 const dateHeading = document.getElementById("current-date");
 
-const nameIn = document.getElementById("name");
-const moodIn = document.getElementById("mood");
-const polygonNum = document.getElementById("polygonNum");
+const nameIn = document.querySelector('#name');
+const moodIn = document.querySelector('#mood');
+const polygonNum = document.querySelector("#polygonNum");
 
 const button1 = document.getElementById("button1");
 const button2 = document.getElementById("button2");
@@ -22,8 +22,6 @@ const minutes = date.getMinutes();
 const ampm = hours >= 12? 'pm' : 'am';
 const dayNames = ["Sunday", "Monday", "Tuesday", "Wednsday", "Thursday", "Friday", "Saturday"];
 const dayInWeek = dayNames[date.getDay()];
-const number = Math.abs(number);
-number = Math.floor(number);
 
 //Date implpicit event handler
 const formattedDate = `Today is ${hoursFix}:${minutes}${ampm} on ${dayInWeek}, ${day}, ${month}, ${year}`;
@@ -44,7 +42,9 @@ button1.addEventListener("click", () => {
 })
 
 //Fav number handler
-button2.addEventListener("click", (number) => {
+button2.addEventListener("click", (polygonNum) => {
+    let number = Math.floor(polygonNum);
+    number = Math.abs(number);
     if(number < 11 && number > 0){
         switch(number){
             case 1:
