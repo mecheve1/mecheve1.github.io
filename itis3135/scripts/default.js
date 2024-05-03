@@ -6,3 +6,11 @@ function myFunction(){
     var date = new Date();
     document.getElementById("clock").innerHTML =  date;
 }
+
+function noCss (){
+    document.querySelectorAll('link[rel=stylesheet]').forEach(
+        function(e){
+            e.setAttribute('href', '');
+    }
+    );
+}

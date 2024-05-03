@@ -1,0 +1,24 @@
+{
+    "main": [
+      {"title": "Home", "url": "index.html"},
+      {"title": "Introduction", "url": "introduction.html"},
+      {"title": "Contract", "url": "contract.html"},
+      {"title": "Forms", "url": "forms.html"},
+      {"title": "Table", "url": "tables.html"},
+      {"title": "Website Evaluations", "url": "website_evaluations.html"},
+      {"title": "First Script", "url": "firstscripts.html"},
+      {"title": "Drawing", "url": "drawing.html"}
+    ],
+
+    "secondary": [
+      {"title": "Crappy Website", "url": "Cr4p9yW3b51Te.html"},
+      {"title": "No CSS", "onclick": "document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href', '');});"},
+      {"title": "Hobby", "url": "hobby/index.html"}
+    ],
+
+    "footer": [
+      {"title": "Page Built by ", "url": ""},
+      {"title": "Page Built by ", "url": ""},
+      {"title": "RWD certified", "url": "https://www.freecodecamp.org/certification/Mateo_Echeverry/responsive-web-design"}
+    ]
+} 

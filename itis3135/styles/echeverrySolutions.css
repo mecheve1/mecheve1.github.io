@@ -1,0 +1,98 @@
+
+:root {
+    --page-color1: #cb9049;
+    --page-color2: #ecd0ad;
+    --page-color3: #575A4B;
+    --page-color4: #2A2C24;
+    --page-color5: #96031A;
+    --page-color6: #ecf0f1;
+    --text-glow: #ff8c00;
+}
+*{
+    
+    color: var(--page-color6);
+    font-family: Georgia;
+}
+
+body{
+    background: var(--page-color1);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: #462255;
+    font-size:  50px;
+}
+h2{
+    margin-top: 0px;
+    text-align: center;
+    color: #462255;
+    font-size: 25px;
+}
+
+p{
+    color:  #ddfff7;
+    text-align: center;
+    font-size: 15px;
+}
+footer{
+    text-align: center;
+}
+.contact {
+    background-color: #93e1d8;
+    margin-left: 20%; 
+    margin-right: 20%; 
+    border: 5px double;
+}
+.c {
+
+}
+.us{
+    background-color: #aa4465;
+    padding: 20px 15px 15px 20px;
+    margin-right: 50%; 
+    border: 5px double;
+}
+.p{
+    color: #462255;
+    text-align: center; 
+    padding-bottom: 1vw;
+    font-size: 110%
+}
+ul, .design{
+    margin-right: 50%; 
+}
+.space{
+    margin: 20px;
+}
+.design{
+    color: #462255;
+}
+.logoPng{
+    float: left;
+    width: 100px;
+    margin-left: 0%;
+    padding: 0;
+}
+.logo{
+    width: 75%;
+    margin:auto; 
+    overflow: hidden;
+}
+.logo .piclogo {
+    margin-right: 5px;
+}
+.text{
+    margin-right: 25%;
+}
+
+button a{
+    background-color: var(--page-color6);
+    color: var(--page-color4);
+    text-decoration: none;
+}
+button a :hover{
+    background-color: var(--page-color2);
+    color: var(--page-color5);
+}

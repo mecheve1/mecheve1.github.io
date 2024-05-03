@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang = "en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0">
         <title>Forms</title>
-        <script>
-            console.log('Salutations y Saludos');
-        </script>
         <link rel="icon" href="images/favicon.ico">
-        <link rel="stylesheet" href="styles/forms.css">
+        <link rel="stylesheet" href="styles/default.css">
     </head>
     
     <body>
-        <div data-include="components/header.html"></div>
+        <div id="headerNav" data-include="components/header.html"></div>
         <main>
-            <h2>Form</h2>
-                <div class="form">
-                    <form action="#" id="form1">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="fname" required placeholder="John Doe"><br>
-                        <label for="pNumber">Phone Number</label>
-                        <input type="text" id="pNumber" name="pNumber" placeholder="000-000-0000" 
-                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" size="10" maxlength="10"><br>
-                        <label for="email" >Email Adress</label>
+            <h2>Forms</h2>
+            <p>Please fill out the form below</p>
+                <div class="divider">
+                    <form action="#" method="post" id="form1">
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe" size="30"><br>
+                        <br>
+                        <label for="phone">Phone Number: </label>
+                        <input type="tel" id="phone" name="phone" placeholder="000-000-0000" 
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}" size="10" ><br>
+                        <br>
+                        <label for="email" >Email Adress: </label>
                         <input type="email" id="email" name="email" required placeholder="wsd@gmail.com"><br>
-                        <label for="people">Projected Evenet Attendanace Number</label>
+                        <br>
+                        <label for="people">Projected Evenet Attendanace Number: </label>
                         <select id="people" name="people">
                             <option value="1em">10-50 people</option>
                             <option value="5em">50-150 people</option>
                             <option value="15em">150-0 people</option>
                             <option value="50em">500+ people</option>
                         </select><br>
-                        <label>Event Entertainment Budget:</label><br>
-                            <input type="radio" name="rev" value="100">
-                                <label>0$ - 100$</label><br>
-                            <input type="radio" name="rev" value="500">
-                                <label >100$ - 500$</label><br>
-                            <input type="radio" name="rev" value="1500">
-                                <label>500$ - 1500$</label><br>
-                            <input type="radio" name="rev" value="+1500">
-                                <label>$1500+</label><br>
-                        <label>Desired Event Pieces</label><br>
-                            <input type="checkbox" name="pieces" value="Dj">
-                                <label>Dj</label><br>
-                            <input type="checkbox" name="pieces" value="Lights">
-                                <label>Lights</label><br>
-                            <input type="checkbox" name="pieces" value="BottleService">
-                                <label>Bottle Service</label><br>
-                            <input type="checkbox" name="pieces" value="FoarmParty">
-                                <label>Foam Party</label><br>
-                        <input type="reset" value="Reset">
-                        <button type="submit" form="form1" class="formSub" value="Submit">Submit</button>
+                        <br>
+                        <label for="rev">Event Entertainment Budget: </label><br>
+                        <input type="radio" name="rev" value="100">
+                        <label>0$ - 100$</label><br>
+                        <input type="radio" name="rev" value="500">
+                        <label >100$ - 500$</label><br>
+                        <input type="radio" name="rev" value="1500">
+                        <label>500$ - 1500$</label><br>
+                        <input type="radio" name="rev" value="+1500">
+                        <label>$1500+</label><br>
+                        <br>
+                        <label for="pieces">Desired Event Pieces: </label><br>
+                        <input type="checkbox" name="pieces" value="Dj">
+                        <label>Dj</label><br>
+                        <input type="checkbox" name="pieces" value="Lights">
+                        <label>Lights</label><br>
+                        <input type="checkbox" name="pieces" value="BottleService">
+                        <label>Bottle Service</label><br>
+                        <input type="checkbox" name="pieces" value="FoarmParty">
+                        <label>Foam Party</label><br>
+                        <br>
+                        <input type="reset" value="Reset" class="reset">
+                        <input type="submit" class="submit" value="Submit">
                     </form>
                 </div>
         </main>
-        <div data-include="components/footer.html"></div>
+        <div id="footerNav" data-include="components/footer.html"></div>
         <script src="scripts/HTMLInclude.min.js"></script>
     </body>   
-
-    <footer>
-        <div data-include="components/footer.html"></div>
-    </footer>
+    
+    
 </html>

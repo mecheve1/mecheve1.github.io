@@ -1,0 +1,57 @@
+:root{
+    --page-color1: #567335;
+    --page-color2: #283618;
+    --page-color3: #FEFAE0;
+    --page-color4: #DDA15E;
+    --page-color5: #BC6C25;
+}
+
+body{
+    background: var(--page-color1);
+    color: var(--page-color2);
+    font-family: Verdana, Tahoma, sans-serif;
+    justify-content: center;
+}
+ 
+#header-container{
+    text-align: center;
+}
+
+
+#green{
+        color: rgb(72, 136, 91);
+        font-size: 30px;
+        font-weight: bold;
+        animation: glow 1.5s infinite alternate;
+}
+
+.aboutMe{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.aboutMe legend{
+    font-weight: 600;
+}
+
+#content-wrapper{
+    justify-content: center;
+    text-align: center;
+}
+
+#spotify{
+    justify-content: center;
+    /*margin-left: 40px;8*/
+    width:85%;
+    margin: auto;
+}
+
+/*Animation*/
+@keyframes glow{
+    100% {
+        text-shadow: 0 0 7px rgb(0, 255, 0), 0 0 14px rgb(0, 255, 0), 0 0 17px rgb(0, 255, 0), 0 0 24px rgb(0, 255, 0), 0 0 34px rgb(0, 255, 0);
+    }
+}

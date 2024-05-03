@@ -1,106 +1,330 @@
-:root{
- --page-color1: #cb9049;
- --page-color2: #0b0033;
- --page-color3: #a41623;
- --page-color4: #ecf0f1;
- --page-color5: #79b473;
+:root {
+    --page-color1: #cb9049;
+    --page-color2: #ecd0ad;
+    --page-color3: #575A4B;
+    --page-color4: #2A2C24;
+    --page-color5: #96031A;
+    --page-color6: #ecf0f1;
+    --text-glow: #ff8c00;
 }
 
 *{
     background: var(--page-color1);
-    color: var(--page-color2)
+    color: var(--page-color6);
+    font-family: Georgia;
 }
 
-title{
-    text-align:center;
-    justify-content: center;
-}
 
-nav{
+header, footer{
+    display: block;
     text-align: center;
 }
 
-main{
-    display:flex;
-    margin: 0 auto;
-    justify-content: center;
+footer {
+    margin-top: 5%;
+}
+
+header{
+    margin-bottom: 5%;
 }
 
 body{
+    margin: 50 auto;
+    color: var(--page-color3);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main {
+    text-align: left;
+    margin: 0 auto; /*Centers the content horizontally*/
+    max-width: 1200px; /* Adjust as needed */
+    width: 90%; /* Adjust percentage based on design requirements */
+}
+
+/* h1{
+    font-size: 2em;
+    font-family: serif;
+}
+
+h2{
+    font-size: 1.75em;
     margin: 0 auto;
-    font-size: 100%;
+    padding: 5px;
+    font-family: serif;
+} */
+
+
+h1, h2, h3, figure, figcaption{
+    text-align: center;
+}
+
+p {
+    font-size: 18px; /* Added font size for better readability */
+}
+
+/* Extra Button Stylings */
+.dropdown {
+    float: left; /* Set position to the top left corner*/
+    overflow: hidden;
+  }
+  
+.dropdown .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: var(--page-color6);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+.dropdown:hover .dropbtn {
+    background-color: var(--page-color3);
+    border:groove;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  float:center;
+  background-color: var(--page-color2);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px var(--page-color2);
+  z-index: 1;
+}
+
+
+.dropdown-content a{
+  float: none;
+  color: var(--page-color2);
+  background-color: var(--page-color4);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--page-color3);
+  border: groove;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Menu Stylings */
+a{
+    text-decoration: none;
+    margin: 0 auto;
     justify-content: center;
 }
-a{
+
+a:hover {
+   color:var(--page-color2);
+   animation: glow 1.5s infinite alternate;
+}
+
+figcaption{
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* table changes */
+table{
     margin: 0 auto;
-    justify-content: center;
+}
+
+tr:nth-child(even) {
+    background-color: #ecd0ad;
+}
+
+tr:nth-child(odd) {
+    background-color: white;
+}
+
+table, th, td, tr {
+    border: 1.5px solid var(--page-color2);
+    border-collapse: collapse;
+    color:var(--page-color6);
+    text-align: center;
+    padding: 1px 4px 1px 4px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+}
+
+th{
+    /* font-size:.5em; */
+    font-weight: 800;
+}
+
+ol{
+    /* font-size: 1.25em; */
+    margin: auto 30%;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    unicode-bidi: isolate;
 }
 
 /*Form Changes*/
-/*Input Feilds*/
-input:focus{
-    border: var(--page-color3)
+form {
+    text-align: left;
+    margin-left: 10%;
+}
+
+.Reset,
+.Submit {
+    border: 2.5px solid var(--page-color3);
+}
+
+input:hover{
+    border: groove;
+    background-color: var(--page-color2);
 }
 input{
-    background-color:#0b0033;
-    border: 3px;
+    background-color:var(--page-color6);
+    color: var(--page-color3);
+    border: 1.3em;
 }
 
 ::placeholder{
-    color: var(--page-color4);
+    color: var(--page-colo5);
 }
 
-/*divs*/
-.headerNav{
-    justify-content: center;
+.formB{
+    text-align: center;
 }
-/*Mdia Querries
-Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    main { 
-        max-width: 600px; /* Adjust as needed */ 
-        width: 90%; /* Adjust percentage based on design requirements */ 
-        margin: 0 auto; /* Centers the content horizontally */ 
-        font-size: 150%;
+
+.formB button{
+    background-color: var(--page-color3);
+    color: var(--page-color2);
+    padding: 1em 1.2em;
+}
+
+.formB p{
+    background-color: var(--page-color4);
+    border: groove 15px;
+    border-color: var(--page-color3);
+    color:var(--text-glow);
+    font-size: 2em;
+    text-align: left;
+}
+/* About Page */
+#slogan{
+    /* style the slogan small */
+    font-size: .8em;
+}
+
+/* Calculator */
+.calculator {
+    width: 400px; /* Increased width */
+    padding: 20px;
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15); /* add a shadow to the buttons */
+    border: 2px solid var(--page-color3); /* Grey border */
+    border-radius: 10px;
+    text-align: center; /* Centering the content */
+    background-color: var(--page-color1); /* Brown background */
+    overflow: hidden;
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.calculator #display {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px; /* Increased font size */
+    background-color: var(--page-color6); /* White display background */
+    border: 5px var(--page-color3); /* White border for display */
+    border-radius: 13px;
+    color:#2A2C24;/* grey numbers on display */
+}
+
+.calculator .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calculator button {
+    border: none;
+     border-radius: 5px; /*curved border */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 20px; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    background-color: var(--page-color2); /* button background */
+    color: var(--page-color4); /* White text color */
+}
+
+.calculator button:hover {
+    background-color: var(--page-color1); /* Lighter pink on hover */
+}
+
+
+/* Extras */
+iFrame{
+    text-align: center;
+    height: 506px;
+    width: 70%;
+}
+
+.gridPhotos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/*Animation*/
+@keyframes glow{
+    100% {
+        text-shadow: 0 0 7px var(--text-glow), 0 0 14px var(--text-glow), 0 0 17px var(--text-glow), 0 0 24px var(--text-glow), 0 0 34px var(--text-glow);
     }
-  }
-  
-  /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
-    main { 
-        max-width: 787px; /* Adjust as needed */ 
-        width: 90%; /* Adjust percentage based on design requirements */ 
-        margin: 0 auto; /* Centers the content horizontally */ 
-        font-size: 150%;
+}
+
+/* Laptop/small screens */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    main {
+        width: 90%;
+        max-width: 1000px; /* Adjust as needed */ 
     }
-  }
-  
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    main { 
-        max-width: 991px; /* Adjust as needed */ 
-        width: 80%; /* Adjust percentage based on design requirements */ 
-        margin: 0 auto; /* Centers the content horizontally */ 
-        font-size: 150%;
+    img {
+        width: 50%;
     }
-  } 
-  
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    main { 
-        max-width: 1199px; /* Adjust as needed */ 
-        width: 90%; /* Adjust percentage based on design requirements */ 
-        margin: 0 auto; /* Centers the content horizontally */ 
-        font-size: 150%;
+}
+
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 980px) {
+    main {
+        width: 90%;
+        font-size: 18px;
+        max-width: 900px; /* Adjust as needed */ 
     }
-  } 
-  
-  /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1285px) {
-    main { 
-        max-width: 2000px; /* Adjust as needed */ 
-        width: 90%; /* Adjust percentage based on design requirements */ 
-        margin: 0 auto; /* Centers the content horizontally */ 
-        font-size: 150%;
+    img {
+        width: 60%;
     }
-  }
+}
+
+/* Mobile */
+@media screen and (min-width: 370px) and (max-width: 600px) {
+    main {
+        width: 85%;
+        font-size: 16px;
+        max-width: 500px; /* Adjust as needed */ 
+    }
+    img {
+        width: 50%;
+    }
+}
+/*  */

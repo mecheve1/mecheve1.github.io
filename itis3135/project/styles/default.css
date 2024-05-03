@@ -1,0 +1,24 @@
+:root {
+    --page-color1: #697a21;
+    --page-color2: #B8B42D;
+    --page-color3: #FFFCE8;
+    --page-color4: #6B2737;
+    --page-color5: #3E363F;
+}
+   
+*{
+    background: var(--page-color1);
+    color: var(--page-color2)
+}
+
+body{
+    
+}
+
+body figcaption img{
+    display:block;
+    justify-content: center;
+    margin: 300px 0px;
+    padding: 100px;
+    font-family: 'Roboto', sans-serif;
+}

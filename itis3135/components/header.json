@@ -1,0 +1,22 @@
+{
+  
+    "title": "Mateo Echeverry's 🦅 Masterful Eagle 🦅 ITIS3135",
+    
+    "menuItems": [
+      {"text": "Home", "url": "index.html"},
+      {"text": "Introduction", "url": "introduction.html"},
+      {"text": "Contract", "url": "contract.html"},
+      {"text": "Forms", "url": "forms.html"},
+      {"text": "Table", "url": "tables.html"},
+      {"text": "Website Evaluations", "url": "website_evaluations.html"},
+      {"text": "First Script", "url": "firstscripts.html"},
+      {"text": "Drawing", "url": "drawing.html"}
+    ],
+
+    "additionalMenuItems": [
+      {"text": "Crappy Website", "url": "Cr4p9yW3b51Te.html"},
+      {"text": "No CSS", "onclick": "document.querySelectorAll('link[rel=stylesheet]').forEach(function(e){e.setAttribute('href', '');});"},
+      {"text": "Hobby", "url": "hobby/index.html"}
+    ]
+  } 
+  

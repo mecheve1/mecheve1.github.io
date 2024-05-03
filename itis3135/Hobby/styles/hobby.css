@@ -1,0 +1,61 @@
+:root{
+    --page-color1: #606C38;
+    --page-color2: #283618;
+    --page-color3: #FEFAE0;
+    --page-color4: #DDA15E;
+    --page-color5: #BC6C25;
+   }
+   
+*{
+    background: var(--page-color1);
+    color: var(--page-color2);
+    font-family: Verdana, Tahoma, sans-serif
+}
+
+header{
+    display:flex;
+    align-items: center;
+}
+
+#navbar {
+    background-color: var(--page-color2);
+    padding: 10px 0;
+}
+#navbar ul {
+    color:var(--page-color3);
+    text-shadow: 0px 0px 5px var(--page-color3),0px 0px 10px var(--page-color2),  0px 0px 15px var(--page-color2), 0px 0px 30px orangered ;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+#navbar ul li a {
+    color: var(--page-color2);
+    text-decoration: none;
+}
+main{
+    margin: 0 auto;
+}
+nav{
+    text-align:center;
+}
+/*section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+/* size images*/
+#hikingImg1, #hikingImg3, #hikingImg4 {
+    width: 50%;
+    height: 50%;
+}
+
+.chatGPT {
+    width: 50%;
+    height: 50%;
+}
